@@ -43,7 +43,7 @@ function App() {
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
-    setData(JSON.parse(localStorage.data));
+    if (localStorage.data) setData(JSON.parse(localStorage.data));
   }, []);
 
   function save() {
