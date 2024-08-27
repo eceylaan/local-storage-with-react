@@ -1,8 +1,45 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
+const array = [
+  {
+    id: 1,
+    ad: "Orhan",
+    soyad: "Ekici",
+    ePosta: "orhanekici@gmail.com",
+    dogumTarihi: "1989-03-17",
+  },
+  {
+    id: 3,
+    ad: "Fıstık",
+    soyad: "Ekici",
+    ePosta: "fistique@zero.com.tr",
+    dogumTarihi: "2021-03-17",
+  },
+  {
+    id: 4,
+    ad: "Lucky",
+    soyad: "Ekici",
+    ePosta: "luckyboy@zero.com.tr",
+    dogumTarihi: "2021-03-17",
+  },
+  {
+    id: 5,
+    ad: "Marcel",
+    soyad: "Ekici",
+    ePosta: "kediozelharekat@zero.com.tr",
+    dogumTarihi: "2022-03-17",
+  },
+  {
+    ad: "ece",
+    soyad: "ceylan",
+    ePosta: "bugrayvx@gmail.comm",
+    dogumTarihi: "2000-05-22",
+    id: 6,
+  },
+];
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(array);
   const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
